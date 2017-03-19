@@ -14,12 +14,13 @@ namespace Vidly.Controllers
         {
             List<Customer> customers = new List<Customer>
             {
-                new Customer { Id=1 , Name = "Zinou" },
+                new Customer {Id = 1, Name = "Zinou" },
                 new Customer {Id = 2, Name = "Mimou" }
             };
             return View(customers);
         }
 
+        // GET: Customers/Details/id
         public ActionResult Details(int id)
         {
             var customer = GetCustomers().SingleOrDefault(c => c.Id == id);
@@ -31,7 +32,7 @@ namespace Vidly.Controllers
         {
             List<Customer> customers = new List<Customer>
             {
-                new Customer { Id=1 , Name = "Zinou" },
+                new Customer {Id = 1, Name = "Zinou" },
                 new Customer {Id = 2, Name = "Mimou" }
             };
 

@@ -17,10 +17,8 @@
             {
                 <tr>
                     <td>@customer.Id</td>
-                    <td>@customer.Name</td>
-                    <td>@Html.ActionLink(customer.Name, "Details", "Customers", new { customer.Id })</td>
+                    <td>@Html.ActionLink(customer.Name, "Details", "Customers", new { id = customer.Id }, null)</td>
                 </tr>
-
             }
         </tbody>
     </table>
